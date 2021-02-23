@@ -1,0 +1,793 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+/*******************	CONFIGURAÇÃO PADRÃO	********************/
+
+
+.titulo_h2{
+	color: #fff;
+	font-weight: 600;
+	font-size: 32px;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+.text{
+	color: #fff;
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: 1px;
+	text-align: justify;
+}
+
+
+/*********************************************/
+
+
+/**********************		BANNER		*************************/
+.banner{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: #3475ca;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 99999;
+}
+.banner header .logo{
+	width: 210px;
+	height: 100px;
+	background-image: url(../imagens/logo.png);	
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+
+/******************************		MENU	**********************/
+
+.nav{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #162c3b;
+	opacity: 0.9;
+	overflow: hidden;
+	padding-top: 60px;
+	transition: 0.7s;
+}
+
+.nav a{
+	display: block;
+	padding: 7px 20px;
+	font-size: 23px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #ccc;
+}
+
+.nav a:hover{
+	color: #fff;
+	transition: 0.7s;
+}
+
+.nav .close{
+	position: absolute;
+	top: 0;
+	right: 22px;
+	font-size: 30px;
+	
+}
+
+span a{
+	font-size: 40px;
+	color: #fff;
+}
+
+
+
+/********************************/
+
+  /**IMG**/
+.banner > img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.25;
+}
+
+/** CONTENT **/
+.banner > .content{
+	position: relative; 
+	max-width: 750px;
+	text-align: center;
+	margin-top: 60px;
+}
+
+.banner .content h2{
+	color: #fff;
+	font-size: 60px;
+}
+
+.banner .content p{
+	color: #fff;
+	font-size: 18px;
+	text-align: justify;
+}
+/***********************************************/
+
+
+/********************		SOBRE		***************************/
+
+.sobre{
+	position: relative;
+	width: 100%;
+	display: flex;
+}
+
+.sobre .contentBx{
+	background: #162c3b;
+	padding: 100px;
+	width: 50%;
+}
+
+.sobre .imgBbx{
+	background-color: #d63031;
+	width: 50%;
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+
+/******************		SERVIÇOS		*****************************/
+
+.servicos{
+	background: #12222d;
+	padding: 100px;
+	text-align: center;
+}
+
+.servicos .container{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 60px;
+} 
+
+.servicos .container .servicosBx{
+	position: relative;
+	background: #fff;
+	width: 350px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.servicos .container .servicosBx img {
+	max-width: 150px;
+}
+
+.servicos .container .servicosBx h2{
+	font-weight: 500;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+
+
+/********************		TECNOLOGIAS 	***************************/
+
+.tecnologias{
+	background: #3f8ffc;
+	width: 100%;
+	padding: 100px;
+	padding-top: 300px;
+	margin-top: -300px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
+
+}
+.tecnologias .content_tecnologias {
+	max-width: 800px;
+}
+.tecnologias .imgBx{
+	max-width: 250px;
+}
+
+.tecnologias .imgBx img{
+	max-width: 100%;
+}
+
+
+/******************			CLIENTES		*****************************/
+
+
+.cliente{
+	background: #162c3b;
+	padding: 100px;
+	text-align: center;
+
+}
+
+.cliente .imgBx{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.cliente .imgBx img{
+	max-width: 200px;
+	margin: 20px;
+	opacity: 0.25;
+	cursor: pointer;
+	
+}
+.cliente .imgBx img:hover{
+	opacity: 1;
+	
+}
+/***********************************************/
+
+
+
+/********************		DEPOIMENTOS			***************************/
+
+.depoimentos{
+	position: relative;
+	padding: 100px;
+	background: #12222d;
+	text-align: center;
+	
+}
+
+.depoimentos .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+
+.depoimentos .container .contentBx{
+	background: #fff;
+	padding: 60px 50px;
+	width: 530px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+}
+
+.depoimentos .container .contentBx p{
+	font-style: italic;
+	text-align: justify;
+}
+
+.depoimentos .container .contentBx h3{
+	width: 100%;
+	text-align: end;
+	font-weight: 500;
+	color: #3f8ffc;
+	
+}
+
+
+/***********************		CONTATO / FORMULARIO		************************/
+
+.contato{
+	padding: 100px;
+	background: #162c3b;
+	text-align: center;
+
+}
+
+.formulario{
+	position: relative;
+	width: 100%;
+	display: flex;
+}
+
+.formulario .contentBx{
+	background: #d63031;
+	padding: 100px;
+	width: 50%;
+}
+
+.imgBx2{
+	background-image: url(../imagens/bg2.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 50%;
+}  
+  
+  /* INPUTS */
+  
+  .txtb{
+	border-bottom: 2px solid #fff;
+	position: relative;
+	margin: 40px 0;
+  }
+  
+  .txtb input{
+	font-size: 18px;
+	color: #ffff;
+	border: none;
+	width: 100%;
+	outline: none;
+	background: none;
+	padding: 0 5px;
+	height: 40px;
+	
+  }
+  .txtb textarea{
+	width: 100%;
+	height: 150px ;
+	background: transparent;
+	box-shadow: none;
+	padding: 10px 0;
+	font-size: 18px;
+	resize: none;
+	color: #fff;
+	border: none;
+	outline: none;
+  }
+  .txtb input::placeholder{
+	color: #fff;
+} 
+  .txtb textarea::placeholder{
+	  color: #fff;
+  }
+    
+  /****************************/
+  
+  /* BOTÃO*/
+  
+  .logbtn{
+	display: block;
+	width: 50%;
+	height: 50px;
+	border: none;
+	background: #f5f6fa;
+	color: #000;
+	outline: none;
+	cursor: pointer;
+	transition: .5s;
+  }
+  
+
+  .bottom-text{
+	margin-top: 60px;
+	text-align: center;
+	font-size: 13px;
+  }
+  
+  /****************************/
+
+/***********************************************/
+
+/***************		FOOTER			********************************/
+
+
+.footer{
+	background: #162c3b;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer a{
+	
+	color: #fff;
+}
+
+.footer ul{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/***	REDES SOCIAIS 	**/
+.middle{
+	position: relative;	
+	width: 100%;
+	text-align: center;
+}
+
+.btn{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: #f1f1f1;
+	margin: 10px;
+	border-radius: 30%;
+	box-shadow: 0 5px 15px -5px #00000070;
+	color: /*#3498db*/ #3475ca;
+	overflow: hidden;
+	position: relative;
+}
+
+.btn i{
+	line-height: 55px;
+	font-size: 24px;
+	transform: 0.2s linear;
+}
+
+
+/* FACEBOOK */
+.middle a:nth-of-type(1){
+	color: #1f3d7c;
+}
+
+/* TWITTER */
+.middle a:nth-of-type(2){
+	color: #3475ca;
+}
+
+/* INSTAGRAM */
+.middle a:nth-of-type(3){
+	color: #000;
+}
+
+/* WHATSAPP */ 
+.middle a:nth-of-type(4){
+	color: #22980c;
+}
+
+/* YOUTUBE */ 
+.middle a:nth-of-type(5){
+	color: #BA160B;
+}
+
+
+/* efeitos do icones*/
+
+.btn:hover i{
+	transform: scale(1.3);
+	color: #f1f1f1;
+}
+
+/* FACEBOOK */
+.btn:nth-of-type(1)::before{
+	content: "";
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	background: /*#3498db*/ #1f3d7c;
+	transform: rotate(45deg);
+	left: -110%;
+	top: 90%;
+}
+
+/* TWITTER */
+.btn:nth-of-type(2)::before{
+	content: "";
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	background: /*#3498db*/ #3475ca;
+	transform: rotate(45deg);
+	left: -110%;
+	top: 90%;
+}
+
+/* INSTAGRAM */
+.btn:nth-of-type(3)::before{
+	content: "";
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	background: linear-gradient(194deg, #382e9f,#af268c,#f0403d, #fe9412, #febe07 );
+	transform: rotate(45deg);
+	left: -110%;
+	top: 90%;
+}
+
+/* WHATSAPP */
+.btn:nth-of-type(4)::before{
+	content: "";
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	background: linear-gradient(475deg, #8ee243, #1b930a);
+	transform: rotate(45deg);
+	left: -110%;
+	top: 90%;
+}
+
+/* YOUTUBE */
+.btn:nth-of-type(5)::before{
+	content: "";
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	background: #BA160B;
+	transform: rotate(45deg);
+	left: -110%;
+	top: 90%;
+}
+
+.btn:hover::before{
+	animation: icon 0.7s 1;
+	top: -10%;
+	left: -10%;
+}
+
+
+@keyframes icon{
+	0%{
+		top: -110%;
+		left: 90%;
+	}
+
+	50%{
+		top: 10%;
+		left: -30%;
+	}
+
+	100%{
+		top: -10%;
+		left: -10%;
+	}
+}
+
+/*********/
+
+/***********************************************/
+
+/***********************		MEDIAS QUERIES		************************/
+@media screen and (max-width: 1275px){
+	
+	.servicos{
+		padding: 50px;
+	}
+
+	.servicos .container{
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	.servicos .container .servicosBx{
+		margin: 20px;
+		width: 300px;
+		height: 350px;
+	}
+
+	.servicos > .titulo_h2{
+		font-size: 35px;
+		margin-bottom: 20px;
+	}
+	.servicos > .text{
+		font-size: 18px;
+	}
+
+	.tecnologias{
+		padding: 50px;
+		padding-top: 300px;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.tecnologias .content_tecnologias{
+		max-width: 900px;
+	}
+
+	.tecnologias .content_tecnologias > .titulo_h2{
+		text-align: center;
+		padding: 50px;
+		font-size: 38px;
+		
+	}
+
+	.tecnologias .content_tecnologias > .text{
+		font-size: 20px;
+	}
+	
+	.tecnologias .imgBx img{
+		margin-top: 40px;
+		max-width: 250px;
+	}
+
+
+	.depoimentos{
+		padding: 50px;
+	}
+
+	.depoimentos .contentBx{
+		padding: 60px 40px;
+		max-width: 550px;
+		margin-bottom: 40px;
+
+			
+	}
+
+	.footer{
+		padding: 20px 50px;
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	.footer p {
+		margin-bottom: 20px;
+	}
+
+
+}
+
+
+@media screen and (max-width: 1170px){
+	
+	.banner {
+		padding: 50px;
+	}
+
+	.banner header {
+		padding: 20px 50px;
+	}
+
+	.banner .content{
+		margin-top: 120px;
+	}
+
+
+	.banner .content h2{
+		font-size: 70px;
+	} 
+
+	.banner .content p {
+		font-size: 20px;
+	}
+
+	.sobre{
+		flex-direction: column;
+	}
+	.sobre .contentBx, 
+	.sobre .imgBbx{
+		width: 100%;
+		min-height: 400px;
+		padding: 50px;
+		text-align: center;
+	}
+
+	.servicos{
+		padding: 50px;
+	}
+
+	.servicos .container{
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	.servicos .container .servicosBx{
+		margin: 20px;
+		width: 300px;
+		height: 350px;
+	}
+
+	.cliente{
+		text-align: center;
+		padding: 50px;
+	}
+
+	.cliente .imgBx{
+		justify-content: center;
+	}
+	
+
+	.contato{
+		padding: 50px;
+	}
+
+	.depoimentos{
+		padding: 30px;
+	}
+
+	.depoimentos .container{
+		justify-content: center;
+		margin-top: 20px;
+	}
+
+	.depoimentos .contentBx{
+		margin: 20px;
+		width: 350px;
+		height: 350px;
+	}
+
+
+	.formulario .contentBx, 
+	.formulario .imgBx2{
+		width: 50%;
+		min-height: 400px;
+		padding: 50px;
+		text-align: center;
+	}
+
+
+	.footer{
+		padding: 20px 50px;
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	.footer p {
+		margin-bottom: 20px;
+	}
+	
+	
+	
+}
+
+
+@media screen and (max-width: 792px){
+
+	.banner{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	
+	.banner .content h2{
+		font-size: 40px;
+	} 
+
+	.banner .content p {
+		font-size: 18px;
+	}
+
+
+	.formulario{
+		flex-direction: column;
+	}
+
+	.formulario .contentBx .form{
+		padding: 30px;
+	}
+
+	.formulario .contentBx, 
+	.formulario .imgBx2{
+		width: 100%;
+		min-height: 400px;
+		padding: 50px;
+		text-align: center;
+	}
+
+
+	
+	  
+}
